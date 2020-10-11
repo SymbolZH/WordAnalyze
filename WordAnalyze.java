@@ -71,7 +71,7 @@ public class WordAnalyze {
                 //属于无符号常数
                 i--;
                 //前导0的去除
-                System.out.println("Ident"+"($"+arr+")");
+                System.out.println("Int"+"($"+arr+")");
             }
             else switch(ch){
                     case ':':{
