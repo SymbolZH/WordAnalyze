@@ -47,7 +47,7 @@ public class WordAnalyze {
         String arr = "";
         for(int i = 0;i< chars.length;i++) {
             ch = chars[i];
-            System.out.println(ch);
+            //System.out.println(ch);
             arr = "";
             if(ch == ' '||ch == '\t'||ch == '\n'||ch == '\r'||ch=='\u0000'){
                 continue;
@@ -115,10 +115,14 @@ public class WordAnalyze {
                     }
                     default:{
                         System.out.println("Unknown");
-                        while(chars[i] != ' '&&chars[i] != '\t'&&chars[i] != '\n'&&chars[i] != '\r'&&chars[i]!='\u0000'){
-                            System.out.println(chars[i]);
+                        while(i<chars.length){
+                            System.out.print(chars[i]);
                             i++;
                         }
+                        //while(chars[i] != ' '&&chars[i] != '\t'&&chars[i] != '\n'&&chars[i] != '\r'&&chars[i]!='\u0000'){
+                        //    System.out.println(chars[i]);
+                        //    i++;
+                        //}
                         break;
                     }
                 }
