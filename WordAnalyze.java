@@ -48,7 +48,7 @@ public class WordAnalyze {
         for(int i = 0;i< chars.length;i++) {
             ch = chars[i];
             arr = "";
-            if(ch == ' '||ch == '\t'||ch == '\n'||ch == '\r'){
+            if(ch == ' '||ch == '\t'||ch == '\n'||ch == '\r'||ch=='\u0000'){
                 continue;
             }
             else if(isLetter(ch)){
@@ -113,7 +113,7 @@ public class WordAnalyze {
                     }
                     default:{
                         System.out.println("Unknown");
-                        System.out.println(ch);
+                        //System.out.println(ch);
                         break;
                     }
                 }
