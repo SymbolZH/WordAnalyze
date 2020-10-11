@@ -127,7 +127,7 @@ public class WordAnalyze {
         reader.read(buf);
         reader.close();
         //4.str = .replaceAll("\\s*", "");
-        System.out.printfln(buf.toString());
+        System.out.println(buf.toString());
         new WordAnalyze().analyze(buf);
     }
 }
