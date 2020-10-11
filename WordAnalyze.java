@@ -3,6 +3,13 @@ import java.io.FileReader;
 
 
 public class WordAnalyze {
+    public static String removeZero(String str) {
+        int len = str.length(), i = 0;
+        while (i < len && str.charAt(i) == '0') {
+            i++;
+        }
+        return str.substring(i);
+    }
     private String keyWord[] = {"BEGIN","END","FOR","IF","THEN","ELSE"};
     private String keyWordOut[]={"Begin","End","For","If","Then","Else"};
     private char ch;
@@ -72,7 +79,7 @@ public class WordAnalyze {
                 i--;
                 //前导0的去除
                 
-                System.out.println("Int"+"("+arr+")");
+                System.out.println("Int"+"("+removeZero(arr)+")");
             }
             else switch(ch){
                     case ':':{
