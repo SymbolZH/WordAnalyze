@@ -47,6 +47,7 @@ public class WordAnalyze {
         String arr = "";
         for(int i = 0;i< chars.length;i++) {
             ch = chars[i];
+            System.out.println(ch);
             arr = "";
             if(ch == ' '||ch == '\t'||ch == '\n'||ch == '\r'||ch=='\u0000'){
                 continue;
