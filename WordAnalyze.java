@@ -112,7 +112,7 @@ public class WordAnalyze {
                         break;
                     }
                     default:{
-                        System.out.println("Unknown");
+                        //System.out.println("Unknown");
                         break;
                     }
                 }
@@ -126,6 +126,6 @@ public class WordAnalyze {
         reader.read(buf);
         reader.close();
         //4.str = .replaceAll("\\s*", "");
-        new WordAnalyze().analyze(buf.toString().replaceAll("\\s*", "").toCharArray());
+        new WordAnalyze().analyze(buf);
     }
 }
