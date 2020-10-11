@@ -115,10 +115,7 @@ public class WordAnalyze {
                     }
                     default:{
                         System.out.println("Unknown");
-                        while(i<chars.length){
-                            System.out.print(chars[i]);
-                            i++;
-                        }
+                        i=chars.length;
                         //while(chars[i] != ' '&&chars[i] != '\t'&&chars[i] != '\n'&&chars[i] != '\r'&&chars[i]!='\u0000'){
                         //    System.out.println(chars[i]);
                         //    i++;
