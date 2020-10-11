@@ -5,7 +5,7 @@ import java.io.FileReader;
 public class WordAnalyze {
     public static String removeZero(String str) {
         int len = str.length(), i = 0;
-        while (i < len && str.charAt(i) == '0') {
+        while (i < len-1 && str.charAt(i) == '0') {
             i++;
         }
         return str.substring(i);
