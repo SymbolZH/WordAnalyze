@@ -112,7 +112,7 @@ public class WordAnalyze {
                         break;
                     }
                     default:{
-                        System.out.println("Unknown");
+                        //System.out.println("Unknown");
                         break;
                     }
                 }
