@@ -114,7 +114,9 @@ public class WordAnalyze {
                     }
                     default:{
                         System.out.println("Unknown");
-                        //System.out.println(ch);
+                        while(chars[i] != ' '&&chars[i] != '\t'&&chars[i] != '\n'&&chars[i] != '\r'&&chars[i]!='\u0000'){
+                            i++;
+                        }
                         break;
                     }
                 }
