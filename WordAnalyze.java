@@ -84,6 +84,7 @@ public class WordAnalyze {
             else switch(ch){
                     case ':':{
                         if(chars[i+1]=='='){
+                            i++;
                             System.out.println("Assign");
                         }
                         else {
